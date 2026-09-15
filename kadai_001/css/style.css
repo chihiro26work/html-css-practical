@@ -1,0 +1,145 @@
+/* PC、スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* ナビゲーション */
+#nav-pc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#nav-pc ul {
+  display: flex;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.nav-li {
+  display: inline;
+  list-style: none;
+  text-align: right;
+  margin: 0 20px;
+}
+
+#nav-pc h1 {
+  font-size: 34px;
+  border: solid 1px black;
+  padding: 0 20px;
+  margin-left: 20px;
+}
+
+#nav-pc a {
+  font-size: 34px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+#nav-pc a:hover {
+  /* text-decoration: underline; */
+}
+
+/* メインビジュアル */
+#mv {
+  margin-top: 40px;
+}
+
+#mv img {
+  width: 100%;
+}
+
+/* アバウト */
+#about {
+  margin: 100px 80px 0 80px;
+  /* width: 60%; */
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+#about-content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+#about-content img {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin-right: 110px;
+}
+
+/* ワークス */
+#works {
+  margin: 100px auto 0 auto;
+  max-width: 90%;
+}
+
+#works h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+/* #works > div {
+  width: 100%;
+} */
+
+#works-content {
+  display: flex;
+  width: 100%;
+}
+
+#works-content div {
+  width: 33.3%;
+  padding: 10px;
+}
+
+#works-content div img {
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+
+
+  /* アバウト */
+  #about-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-content img  {
+    margin: 0 auto;
+  }
+
+}
