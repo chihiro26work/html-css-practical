@@ -26,12 +26,12 @@ p {
   justify-content: space-between;
   align-items: center;
   margin: 20px auto;
-  width: 90%;
+  max-width: 960px;
 }
 
 #header-nav ul {
   display: flex;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   padding: 0;
 }
 
@@ -138,6 +138,10 @@ footer p {
 
   #header-nav #header-pro{
     font-size: 28px;
+  }
+
+  .nav-li {
+    margin: 0 10px;
   }
 
 
